@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{ $styles := resources.Get "sass/index.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+    <title>Greatman Lim - CV</title>
+  </head>
+
+  <body>
+
+    <article class="resume">
+      <section class="name"></section>
+      <section class="photo"></section>
+      <section class="about"></section>
+      <section class="work"></section>
+      <section class="education"></section>
+      <section class="community"></section>
+      <section class="references"></section>
+      <section class="skills"></section>
+    </article>
+
+  </body>
+
+</html>
