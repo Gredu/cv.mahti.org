@@ -2,24 +2,89 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width" />
     {{ $styles := resources.Get "sass/index.scss" | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
-    <title>Greatman Lim - CV</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+    <title>Greatman Lim CV</title>
   </head>
 
   <body>
 
-    <article class="resume">
-      <section class="name"></section>
-      <section class="photo"></section>
-      <section class="about"></section>
-      <section class="work"></section>
-      <section class="education"></section>
-      <section class="community"></section>
-      <section class="references"></section>
-      <section class="skills"></section>
-    </article>
+    <div class="main-grid">
+      <header><h1>CV</h1></header>
+      <div class="picture"><img src="/greatman-lim.jpg" alt=""></div>
+      <div class="jumbotron">
+        <h2>Greatman Lim</h2>
+        <h4>ohjelmoija - graafinen suunnittelija</h4>
+        <div class="center">
+          <p>
+          Tanssii ja kisaa buggia. Lukee, koska rakastaa typografiaa. Käy joskus kalassa.
+          </p>
+        </div>
+      </div>
+      <main>
+        {{ range .Site.Taxonomies.categories.item }}
+        <article>
+          <h3>{{ .Params.startYear }} {{ with .Params.endYear }}- {{ . }}{{ end }} {{ .Title }}</h3>
+          {{ .Content }}
+        </article>
+        {{ end }}
+      </main>
+      <div class="about">
+
+        <h4>Yleistä</h4>
+
+        <h5>Yhteystiedot</h5>
+        <ul>
+          <li>
+            <span class="fact-list"><a href="mailto:greatman.lim@mahti.org">greatman.lim@mahti.org</a></span>
+          </li>
+          <li>
+            <span class="fact-list">+358 44 5200985</span>
+          </li>
+          <li>
+            <span class="fact-list">Helsinki</span>
+          </li>
+        </ul>
+
+        <h5>Koulutus</h5>
+        <ul>
+          <li>
+            <span class="fact-list">Helsingin yliopisto - luonnontieteiden kandidaatti</span>
+          </li>
+        </ul>
+
+        <h5>Muuta</h5>
+        <ul>
+          <li>
+            <span class="fact-list"><a href="https://github.com/Gredu">github</a></span>
+          </li>
+          <li>
+            <span class="fact-list">b</span>
+            <span class="fact-list-description">ajokortti</span>
+          </li>
+        </ul>
+
+        <h5>Kielitaito</h5>
+        <ul>
+          <li>
+            <span class="fact-list">suomi</span>
+            <span class="fact-list-description">äidinkieli</span>
+          </li>
+          <li>
+            <span class="fact-list">englanti</span>
+            <span class="fact-list-description">sujuva</span>
+          </li>
+          <li>
+            <span class="fact-list">teochew</span>
+            <span class="fact-list-description">sujuva</span>
+          </li>
+        </ul>
+
+      <!-- <div class="goal"> -->
+      <!--   <h4>Tavoitteet</h4> -->
+      <!-- </div> -->
 
   </body>
 

@@ -1,0 +1,10 @@
+baseURL: "http://example.org/"
+languageCode: "fi-fi"
+title: "Greatman Lim - CV"
+
+params:
+  facts:
+    languages:
+        value: "suomi"
+        value: "englanti"
+        value: "teochew"
