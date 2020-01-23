@@ -6,4 +6,4 @@ categories: ["item"]
 ---
 Lyhytelokuva projekti. Taistelu- ja stunttikoreografi, sekä manageri. Treenit ja yhteydenotot stunttien kanssa, sekä päänäyttelijöiden koulutus taistelukohtauksiin.
 
-Suosittelijana ohjaaja Pekka Paalanen, +358449703882.
+Suosittelijana ohjaaja **Pekka Paalanen**, pekka.paalanen@suomiforum.com, +358 44 9703882.
