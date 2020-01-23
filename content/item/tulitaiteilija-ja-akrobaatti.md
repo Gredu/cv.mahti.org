@@ -5,4 +5,6 @@ startYear: 2008
 endYear: 2012
 categories: ["item"]
 ---
-Esiintyjänä viiden ja kahden hengen ryhmissä, välillä soolona. Yhteistyötä Taika Triojen kanssa. Esiintymisen lisäksi hoidin asiakaskontakteja ja tuotantoa.
+Esiintyjänä viiden ja kahden hengen ryhmissä, välillä soolona. Yhteistyötä Taika Triojen (nyk. [Taikatulet](http://taikatulet.fi)) kanssa. Esiintymisen lisäksi hoidin asiakaskontakteja ja tuotantoa.
+
+Suosittelijana yksityisyrittäjä, esiintyjä ja akrobaatti Jani Hurmerinta, +358 41 5047038.
