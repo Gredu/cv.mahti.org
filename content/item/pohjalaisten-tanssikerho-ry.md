@@ -6,7 +6,7 @@ startYear: 2019
 endYear: 2020
 ---
 ##### 2020 Varapuheenjohtaja
-Suhteiden ja yhteyksien ylläpito Pohjalaisten Valtuuskuntaan. Suurimpana työnä ja saavutuksena on ollut Pohjalaisten tanssikerhon nettisivut: https://musing-ardinghelli-ad83b1.netlify.com/
+Suhteiden ja yhteyksien ylläpito Pohjalaisten Valtuuskuntaan. Suurimpana työnä ja saavutuksena on ollut Pohjalaisten tanssikerhon nettisivut: http://pohjalaiset.fi/tanssikerho
 
 Nettisivuja ei ole vielä julkaistu, ja ovat väliaikaisessa osoitteessa.
 
