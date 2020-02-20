@@ -1,9 +1,34 @@
 {
-  "meili": "<a href='mailto:greamtan.lim@mahti.org'>greatman.lim@mahti.org</a>",
-  "puh": "+358 44 5200985",
-  "syntymävuosi": "1985",
-  "koulutus": "luonnontietieden kandi",
-  "koodia": "<a href='https://github.com/Gredu'>github</a>",
-  "ajokortti": "b",
-  "asuinseutu": "Helsinki"
+  "yhteystiedot": [
+    {
+      "fact": "<a href='mailto:greatman.lim@mahti.org'>greatman.lim@mahti.org</a>",
+      "description": "meili"
+    },
+    {
+      "fact": "+358 44 5200985"
+    },
+    {
+      "fact": "Helsinki"
+    }
+  ],
+  "koulutus": [
+    {
+      "fact": "Helsingin yliopisto - luonnontieteiden kandidaatti"
+    }
+  ],
+  "Harrastukset": [
+    {
+      "fact": "bugg",
+      "description": "paritanssi kisatasolla"
+    },
+    {
+      "fact": "amatöörielokuvat"
+    },
+    {
+      "fact": "kalastus"
+    },
+    {
+      "fact": "retkeily"
+    }
+  ]
 }

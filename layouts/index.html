@@ -18,9 +18,7 @@
         <h2>Greatman Lim</h2>
         <h4>ohjelmoija - graafinen suunnittelija</h4>
         <div class="center">
-          <p>
-          Tanssii ja kisaa buggia. Lukee, koska rakastaa typografiaa. Käy joskus kalassa.
-          </p>
+          <p>Suurimmat kiinnostukset ovat tällä hetkellä web devaus (fullstack, frontend, backend), tekoäly ja data-analyysi.</p>
         </div>
       </div>
       <main>
@@ -50,22 +48,60 @@
 
         <h5>Koulutus</h5>
         <ul>
+          {{ range .Site.Data.facts.koulutus }}
           <li>
-            <span class="fact-list">Helsingin yliopisto - luonnontieteiden kandidaatti</span>
+            <span class="fact-list">{{ .fact }}</span>
+            {{ with .description }}
+            <span class="fact-list-description"> {{ . }}</span>
+            {{ end }}
+          </li>
+          {{ end }}
+        </ul>
+
+        <h5>Taidot ja osaaminen</h5>
+        <ul>
+          <li>
+            <span class="fact-list">golang, haskell</span>
+            <span class="fact-list-description">suosikit</span>
+          </li>
+          </li>
+            <span class="fact-list">hugo, vue</span>
+            <span class="fact-list-description">frameworkit</span>
+          </li>
+          <li>
+            <span class="fact-list">neovim, tmux, git</span>
+            <span class="fact-list-description">työkalut</span>
+          </li>
+          <li>
+            <span class="fact-list">sass (scss)</span>
+            <span class="fact-list-description">web</span>
+          </li>
+          <li>
+            <span class="fact-list">photoshop, gimp</span>
+            <span class="fact-list-description">grafiikka</span>
+          </li>
+          <li>
+            <span class="fact-list"><a href="https://github.com/Gredu">github</a></span>
+            <span class="fact-list-description">töitä</span>
           </li>
         </ul>
 
-        <h5>Muuta</h5>
+        <h5>Käyttöjärjestelmä ja työkalut</h5>
         <ul>
           <li>
-            <span class="fact-list"><a href="https://github.com/Gredu">github</a></span>
+            <span class="fact-list">Arch linux</span>
           </li>
           <li>
-            <span class="fact-list"><a href="https://www.imdb.com/name/nm7093096/?ref_=fn_al_nm_1">imdb</a></span>
+            <span class="fact-list">xmonad</span>
+            <span class="fact-list-description">wm</span>
           </li>
           <li>
-            <span class="fact-list">b</span>
-            <span class="fact-list-description">ajokortti</span>
+            <span class="fact-list">zsh</span>
+            <span class="fact-list-description">shell</span>
+          </li>
+          <li>
+            <span class="fact-list"></span>
+            <span class="fact-list-description"></span>
           </li>
         </ul>
 
@@ -84,6 +120,36 @@
             <span class="fact-list-description">sujuva</span>
           </li>
         </ul>
+
+        <h5>Harrastukset</h5>
+        <ul>
+          <li>
+            <span class="fact-list">bugg</span>
+            <span class="fact-list-description">paritanssi kisatasolla</span>
+          </li>
+          <li>
+            <span class="fact-list">amatöörielokuvat</span>
+            <span class="fact-list-description"></span>
+          </li>
+          <li>
+            <span class="fact-list">kalastus</span>
+          </li>
+          <li>
+            <span class="fact-list">retkeily</span>
+          </li>
+        </ul>
+
+        <h5>Muuta</h5>
+        <ul>
+          <li>
+            <span class="fact-list"><a href="https://www.imdb.com/name/nm7093096/?ref_=fn_al_nm_1">imdb</a></span>
+          </li>
+          <li>
+            <span class="fact-list">b</span>
+            <span class="fact-list-description">ajokortti</span>
+          </li>
+        </ul>
+
 
       <!-- <div class="goal"> -->
       <!--   <h4>Tavoitteet</h4> -->
