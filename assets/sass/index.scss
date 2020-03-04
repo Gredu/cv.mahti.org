@@ -129,6 +129,7 @@ $red: #cc6666;
     }
   }
 
+
   .jumbotron {
     grid-area: jumbotron;
     .center {
@@ -172,6 +173,24 @@ $red: #cc6666;
 
   .goal {
     grid-area: goal;
+  }
+
+}
+
+
+@media only screen {
+  .fullhref {
+    display: none;
+  }
+}
+
+@media only print {
+  .hide-on-print {
+    display: none;
+  }
+
+  .fullhref {
+    display: inline;
   }
 
 }
