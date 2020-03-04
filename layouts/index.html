@@ -4,8 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     {{ $styles := resources.Get "sass/index.scss" | toCSS | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
-    <link rel="stylesheet" media="print" href="{{ $styles.Permalink }}">
+    <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="all">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand"> 
     <title>Greatman Lim CV</title>
   </head>
