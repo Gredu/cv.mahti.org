@@ -7,7 +7,7 @@ endYear: 2021
 ---
 
 ##### 2021 Varapuheenjohtaja
-Suurimpana työnä on ollut Pohjalaisten tanssikerhon jäsenrekistern hallintasovellus: https://pot-members.netlify.com
+Suurimpana työnä on ollut Pohjalaisten tanssikerhon jäsenrekisterin hallintasovellus: https://pot-members.netlify.com
 
 ##### 2020 Varapuheenjohtaja
 Suurimpana työnä on ollut Pohjalaisten tanssikerhon nettisivut: http://pohjalaiset.fi/tanssikerho
