@@ -1,34 +1,143 @@
 {
-  "yhteystiedot": [
+  "facts": [
     {
-      "fact": "<a href='mailto:greatman.lim@mahti.org'>greatman.lim@mahti.org</a>",
-      "description": "meili"
+      "label": "Yhteystiedot",
+      "items": [
+        {
+          "fact": "<a href='mailto:greatman.lim@mahti.org'>greatman.lim@mahti.org</a>",
+          "description": "",
+          "link": "https://github.com/Gredu"
+        },
+        {
+          "fact": "+358 44 5200985",
+          "description": ""
+        },
+        {
+          "fact": "Helsinki",
+          "description": ""
+        }
+      ]
     },
     {
-      "fact": "+358 44 5200985"
+      "label": "Koulutus",
+      "items": [
+        {
+          "fact": "Helsingin yliopisto - luonnontieteiden kandidaatti",
+          "description": ""
+        }
+      ]
     },
     {
-      "fact": "Helsinki"
-    }
-  ],
-  "koulutus": [
-    {
-      "fact": "Helsingin yliopisto - luonnontieteiden kandidaatti"
-    }
-  ],
-  "Harrastukset": [
-    {
-      "fact": "bugg",
-      "description": "paritanssi kisatasolla"
+      "label": "Taidot ja osaaminen",
+      "items": [
+        {
+          "fact": "javascript",
+          "description": "paras osaaminen"
+        },
+        {
+          "fact": "java",
+          "description": "koulussa opittu"
+        },
+        {
+          "fact": "golang, haskell",
+          "description": "kiinnostunut"
+        },
+        {
+          "fact": "hugo, vue",
+          "description": "frameworkit"
+        },
+        {
+          "fact": "git",
+          "description": "versionhallinta"
+        },
+        {
+          "fact": "sass (scss)",
+          "description": "web"
+        },
+        {
+          "fact": "photoshop, gimp",
+          "description": "grafiikka"
+        },
+        {
+          "fact": "<a href='https://github.com/Gredu'>github</a>",
+          "description": "töitä",
+          "link": "https://github.com/Gredu",
+          "printhref": "github.com/Gredu"
+        }
+      ]
     },
     {
-      "fact": "amatöörielokuvat"
+      "label": "Käyttöjärjestelmä ja työkalut",
+      "items": [
+        {
+          "fact": "Arch linux",
+          "description": "os"
+        },
+        {
+          "fact": "xmonad",
+          "description": "wm"
+        },
+        {
+          "fact": "neovim, tmux",
+          "description": "työkalut"
+        },
+        {
+          "fact": "zsh",
+          "description": "shell"
+        }
+      ]
     },
     {
-      "fact": "kalastus"
+      "label": "Kielitaito",
+      "items": [
+        {
+          "fact": "suomi",
+          "description": "äidinkieli"
+        },
+        {
+          "fact": "englanti",
+          "description": "sujuva"
+        },
+        {
+          "fact": "teochew",
+          "description": "ok"
+        }
+      ]
     },
     {
-      "fact": "retkeily"
+      "label": "Harrastukset",
+      "items": [
+        {
+          "fact": "bugg",
+          "description": "paritanssi kisatasolla"
+        },
+        {
+          "fact": "amatöörielokuvat",
+          "description": ""
+        },
+        {
+          "fact": "kalastus",
+          "description": ""
+        },
+        {
+          "fact": "retkeily",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "label": "Muuta",
+      "items": [
+        {
+          "fact": "imdb",
+          "description": "",
+          "link": "https://www.imdb.com/name/nm7093096/?ref_=fn_al_nm_1"
+        },
+        {
+          "fact": "b",
+          "description": "ajokortti"
+        }
+      ]
     }
   ]
 }

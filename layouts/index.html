@@ -33,140 +33,36 @@
 
         <h4>Yleistä</h4>
 
-        <h5>Yhteystiedot</h5>
+        {{ range .Site.Data.facts.facts }}
+        <h5>{{ .label }}</h5>
         <ul>
-          <li>
-            <span class="fact-list"><a href="mailto:greatman.lim@mahti.org">greatman.lim@mahti.org</a></span>
-          </li>
-          <li>
-            <span class="fact-list">+358 44 5200985</span>
-          </li>
-          <li>
-            <span class="fact-list">Helsinki</span>
-          </li>
-        </ul>
-
-        <h5>Koulutus</h5>
-        <ul>
-          {{ range .Site.Data.facts.koulutus }}
-          <li>
-            <span class="fact-list">{{ .fact }}</span>
+          {{ range .items }}
+          <li class="fact-list">
+            <span class="fact-list">
+              {{ with .link }}
+                <a href="{{ . }}">
+              {{ end }}
+              {{ .fact | markdownify }}
+              {{ with .link }}
+                </a>
+              {{ end }}
+            </span>
+            {{ $foo := "" }}
+            {{ with .printhref }}
+              <span class="printhref"> : {{ . }}</span>
+              {{ $foo = "hide-on-print" }}
+            {{ end }}
             {{ with .description }}
-            <span class="fact-list-description"> {{ . }}</span>
+            <span class="fact-list-description {{ $foo }}">{{ . }}</span>
             {{ end }}
           </li>
           {{ end }}
         </ul>
+        {{ end }}
 
-        <h5>Taidot ja osaaminen</h5>
-        <ul>
-          <li>
-            <span class="fact-list">javascript</span>
-            <span class="fact-list-description">paras osaaminen</span>
-          </li>
-          <li>
-            <span class="fact-list">java</span>
-            <span class="fact-list-description">koulussa opittu</span>
-          </li>
-          <li>
-            <span class="fact-list">golang, haskell</span>
-            <span class="fact-list-description">kiinnostunut</span>
-          </li>
-          </li>
-            <span class="fact-list">hugo, vue</span>
-            <span class="fact-list-description">frameworkit</span>
-          </li>
-          <li>
-            <span class="fact-list">git</span>
-            <span class="fact-list-description">versionhallinta</span>
-          </li>
-          <li>
-            <span class="fact-list">sass (scss)</span>
-            <span class="fact-list-description">web</span>
-          </li>
-          <li>
-            <span class="fact-list">photoshop, gimp</span>
-            <span class="fact-list-description">grafiikka</span>
-          </li>
-          <li>
-            <span class="fact-list"><a href="https://github.com/Gredu">github</a></span><span class="fullhref"> : https://gitihub.com/Gredu</span>
-            <span class="fact-list-description hide-on-print">töitä</span>
-          </li>
-        </ul>
-
-        <h5>Käyttöjärjestelmä ja työkalut</h5>
-        <ul>
-          <li>
-            <span class="fact-list">Arch linux</span>
-            <span class="fact-list-description">os</span>
-          </li>
-          <li>
-            <span class="fact-list">xmonad</span>
-            <span class="fact-list-description">wm</span>
-          </li>
-          <li>
-            <span class="fact-list">neovim, tmux</span>
-            <span class="fact-list-description">työkalut</span>
-          </li>
-          <li>
-            <span class="fact-list">zsh</span>
-            <span class="fact-list-description">shell</span>
-          </li>
-          <li>
-            <span class="fact-list"></span>
-            <span class="fact-list-description"></span>
-          </li>
-        </ul>
-
-        <h5>Kielitaito</h5>
-        <ul>
-          <li>
-            <span class="fact-list">suomi</span>
-            <span class="fact-list-description">äidinkieli</span>
-          </li>
-          <li>
-            <span class="fact-list">englanti</span>
-            <span class="fact-list-description">sujuva</span>
-          </li>
-          <li>
-            <span class="fact-list">teochew</span>
-            <span class="fact-list-description">ok</span>
-          </li>
-        </ul>
-
-        <h5>Harrastukset</h5>
-        <ul>
-          <li>
-            <span class="fact-list">bugg</span>
-            <span class="fact-list-description">paritanssi kisatasolla</span>
-          </li>
-          <li>
-            <span class="fact-list">amatöörielokuvat</span>
-            <span class="fact-list-description"></span>
-          </li>
-          <li>
-            <span class="fact-list">kalastus</span>
-          </li>
-          <li>
-            <span class="fact-list">retkeily</span>
-          </li>
-        </ul>
-
-        <h5>Muuta</h5>
-        <ul>
-          <li>
-            <span class="fact-list"><a href="https://www.imdb.com/name/nm7093096/?ref_=fn_al_nm_1">imdb</a></span>
-          </li>
-          <li>
-            <span class="fact-list">b</span>
-            <span class="fact-list-description">ajokortti</span>
-          </li>
-        </ul>
-
-
-      <!-- <div class="goal"> -->
-      <!--   <h4>Tavoitteet</h4> -->
-      <!-- </div> -->
+        <div class="goal">
+          <h4>Tavoitteet</h4>
+        </div>
 
   </body>
 
