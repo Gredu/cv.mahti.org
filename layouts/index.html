@@ -18,7 +18,7 @@
         <h2>Greatman Lim</h2>
         <h4>ohjelmoija - graafinen suunnittelija</h4>
         <div class="center">
-          <p>Työkiinnostukset tällä hetkellä ovat web devaus (fullstack, frontend, backend), tekoäly ja data-analyysi. Käy katsomassa <a href="https://github.com/Gredu">Github</a>.</p>
+          <p>Työkiinnostukseni tällä hetkellä ovat web devaus (fullstack, frontend, backend), tekoäly ja data-analyysi. Käy katsomassa <a href="https://github.com/Gredu">Github</a>.</p>
         </div>
       </div>
       <main>
@@ -60,9 +60,12 @@
         </ul>
         {{ end }}
 
+        {{ with .Site.GetPage "/tavoitteet.md" }}
         <div class="goal">
-          <h4>Tavoitteet</h4>
+          <h4>{{ .Title }}</h4>
+          {{ .Content }}
         </div>
+        {{ end }}
 
   </body>
 
