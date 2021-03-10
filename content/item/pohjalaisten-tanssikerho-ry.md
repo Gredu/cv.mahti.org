@@ -13,4 +13,4 @@ Suurimpana työnä on ollut Pohjalaisten tanssikerhon jäsenrekisterin hallintas
 Suurimpana työnä on ollut Pohjalaisten tanssikerhon nettisivut: http://pohjalaiset.fi/tanssikerho
 
 ##### 2019 Puheenjohtaja
-Suhteiden ja yhteyksien ylläpito Pohjalaisten Valtuuskuntaan. Pohjalaisten tanssikerho yhdistys on ollut lähellä konkurssia monena vuotena peräkkäin, mutta vuoden 2019 aikana yhtiö on tehnyt ennätysvoitot.
+Suhteiden ja yhteyksien ylläpito Pohjalaisten Valtuuskuntaan. Pohjalaisten tanssikerho on ollut tappiollinen monena vuotena peräkkäin ja lähellä konkurssia, mutta onnistui kuitenkin vuonna 2019 tekemään ennätysvoitot.
