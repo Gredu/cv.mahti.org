@@ -6,5 +6,4 @@ startYear: 2020
 endYear: 2021
 ---
 
-Cometsin bugg lajivastaava. Työtehtäviin kuuluu kurssien järjestäminen, valmentajien hankkiminen ja kurssilaisten tiedottaminen, sekä seuravalmentajien koulutussuunnitelman laatiminen.
-
+Cometsin bugg-lajivastaava. Työtehtäviini kuuluvat kurssien järjestäminen, valmentajien hankkiminen ja kurssilaisten tiedottaminen, sekä seuravalmentajien koulutussuunnitelman laatiminen.
