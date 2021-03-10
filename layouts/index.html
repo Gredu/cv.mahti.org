@@ -24,7 +24,7 @@
       <main>
         {{ range .Site.Taxonomies.categories.item }}
         <article>
-          <h3>{{ .Params.startYear }} {{ with .Params.endYear }}- {{ . }}{{ end }} {{ .Title }}</h3>
+          <h3>{{ .Params.startYear }} {{ with .Params.endYear }}- {{ . }}{{ end }} {{ .Title }} {{ with .Description }}<span class="description">{{ . }}</span>{{ end }}</h3>
           {{ .Content }}
         </article>
         {{ end }}

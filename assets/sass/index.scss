@@ -50,6 +50,11 @@ $red: #cc6666;
     border: 2px solid $border;
     border-left: none;
     border-right: none;
+    .description {
+      color: $green;
+      font-weight: normal;
+      padding-left: .5em;
+    }
   }
 
   h5 {
