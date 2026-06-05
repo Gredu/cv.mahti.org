@@ -6,7 +6,7 @@
     <meta name="description" content="Greatman Lim – ohjelmoija ja graafinen suunnittelija. CV: kokemus, taidot ja yhteystiedot." />
 
     {{ $styles := resources.Get "sass/index.scss" | toCSS | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="all">
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="all">
 
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
@@ -28,17 +28,11 @@
   <body>
 
     <div class="main-grid">
-      <header><h1>CV</h1></header>
-
-      <div class="jumbotron">
+      <header class="masthead">
+        <h1>CV</h1>
         <h2>Greatman Lim</h2>
         <h4>ohjelmoija - graafinen suunnittelija</h4>
-        <div class="center">
-          <p>Työkiinnostukseni tällä hetkellä ovat web devaus (fullstack, frontend, backend), tekoäly ja data-analyysi. Käy katsomassa <a href="https://github.com/Gredu">Github</a>.</p>
-        </div>
-      </div>
-
-      <div class="picture"><img src="/greatman-lim.jpg" alt="Greatman Lim"></div>
+      </header>
 
       <main>
         {{ range (where .Site.RegularPages "Section" "item").ByParam "startYear" | collections.Reverse }}

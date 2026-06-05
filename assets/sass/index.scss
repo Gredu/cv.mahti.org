@@ -27,9 +27,7 @@ $green: #61892f;
 $blue: #81a2be;
 $red: #cc6666;
 
-@media all {
-
-  body {
+body {
     background: $background;
     color: $text;
     font-family: 'Quicksand', sans-serif;
@@ -105,41 +103,55 @@ $red: #cc6666;
   .main-grid {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto auto;
     grid-template-areas:
     "header"
-    "jumbotron"
-    "picture"
-    "about"
-    "main";
+    "main"
+    "about";
     @media only screen and (min-width: 770px) {
       grid-template-columns: 500px 245px;
-      grid-template-rows: auto auto auto;
       grid-template-areas:
       "header header"
-      "jumbotron picture"
-      "main about";
+      "main   about";
       max-width: 800px;
       grid-column-gap: 1.2em;
     }
     @media only print {
       grid-template-columns: 530px 245px;
-      grid-template-rows: auto auto auto;
       grid-template-areas:
       "header header"
-      "jumbotron picture"
-      "main about";
+      "main   about";
     }
     margin: 0 auto;
     grid-row-gap: 4px;
   }
 
-  header {
+  .masthead {
     grid-area: header;
-    border-bottom: 2px solid $border;
+    text-align: left;
+    padding-bottom: .5em;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+    "cv name"
+    "cv subtitle";
+    column-gap: 1.2em;
+    align-items: center;
     h1 {
-      margin-bottom: 0;
+      grid-area: cv;
+      margin: 0;
       font-size: 4em;
+    }
+    h2 {
+      grid-area: name;
+      align-self: end;
+      margin: 0;
+    }
+    h4 {
+      grid-area: subtitle;
+      align-self: start;
+      border: none;
+      padding: 0;
+      margin: .1em 0 0 0;
     }
   }
 
@@ -147,39 +159,6 @@ $red: #cc6666;
     grid-area: main;
     article p:last-child {
       margin-bottom: 25px;
-    }
-  }
-
-
-  .jumbotron {
-    grid-area: jumbotron;
-    .center {
-      @media (min-width: 770px) {
-        margin-top: 3.5em;
-      }
-      margin: 2em 0 1em 0;
-      text-align: center;
-    }
-    h2 {
-      margin-top: .2em;
-      margin-bottom: 0;
-    }
-    h4 {
-      border: none;
-      padding: 0;
-    }
-    p {
-      width: 75%;
-      margin: auto;
-    }
-  }
-
-  .picture {
-    grid-area: picture;
-    text-align: center;
-    img {
-      border-radius: 50%;
-      margin: 1em 0;
     }
   }
 
@@ -191,9 +170,6 @@ $red: #cc6666;
       padding-left: .7em;
     }
   }
-
-}
-
 
 @media only screen {
   .printhref {
