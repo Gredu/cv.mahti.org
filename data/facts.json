@@ -18,7 +18,7 @@
       ]
     },
     {
-      "label": "Koulutus",
+      "label": "Tutkinnot",
       "items": [
         {
           "fact": "Helsingin yliopisto - luonnontieteiden kandidaatti",
@@ -30,59 +30,18 @@
       "label": "Taidot ja osaaminen",
       "items": [
         {
-          "fact": "javascript",
-          "description": "paras osaaminen"
+          "fact": "Nuxt",
+          "description": "+ ekosysteemi"
         },
         {
-          "fact": "java",
-          "description": "koulussa opittu"
-        },
-        {
-          "fact": "golang, haskell",
-          "description": "kiinnostunut"
-        },
-        {
-          "fact": "hugo, vue",
-          "description": "frameworkit"
-        },
-        {
-          "fact": "git",
-          "description": "versionhallinta"
-        },
-        {
-          "fact": "sass (scss)",
-          "description": "web"
-        },
-        {
-          "fact": "photoshop, gimp",
-          "description": "grafiikka"
+          "fact": "Hugo",
+          "description": ""
         },
         {
           "fact": "<a href='https://github.com/Gredu'>github</a>",
-          "description": "töitä",
+          "description": "henkilökohtaisia projekteja",
           "link": "https://github.com/Gredu",
           "printhref": "github.com/Gredu"
-        }
-      ]
-    },
-    {
-      "label": "Käyttöjärjestelmä ja työkalut",
-      "items": [
-        {
-          "fact": "Arch linux",
-          "description": "os"
-        },
-        {
-          "fact": "xmonad",
-          "description": "wm"
-        },
-        {
-          "fact": "neovim, tmux",
-          "description": "työkalut"
-        },
-        {
-          "fact": "zsh",
-          "description": "shell"
         }
       ]
     },
@@ -111,15 +70,15 @@
           "description": "paritanssi kisatasolla"
         },
         {
-          "fact": "amatöörielokuvat",
-          "description": ""
-        },
-        {
           "fact": "kalastus",
           "description": ""
         },
         {
           "fact": "retkeily",
+          "description": ""
+        },
+        {
+          "fact": "lukeminen",
           "description": ""
         }
       ]
@@ -127,11 +86,6 @@
     {
       "label": "Muuta",
       "items": [
-        {
-          "fact": "imdb",
-          "description": "",
-          "link": "https://www.imdb.com/name/nm7093096/?ref_=fn_al_nm_1"
-        },
         {
           "fact": "b",
           "description": "ajokortti"
