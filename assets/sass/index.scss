@@ -26,6 +26,7 @@ $border: #c5c6c7;
 $green: #61892f;
 $blue: #81a2be;
 $red: #cc6666;
+$headerBand: lighten($mainTitle, 7%); // main-header band, slightly lighter teal
 
 body {
     background: $background;
@@ -57,28 +58,32 @@ body {
     font-size: 32px;
   }
 
-  h3, h4 {
-    padding: .7em;
-    margin-bottom: .7em;
+  // Main headers: teal band, white text — the strong anchors.
+  h3 {
+    padding: .55em .7em;
+    margin-bottom: .8em;
     margin-top: 0;
     font-size: 15px;
-    color: $title;
-    border: 2px solid $border;
-    border-left: none;
-    border-right: none;
+    color: #fff;
+    background: $headerBand;
+    border-radius: 3px;
     .description {
-      color: $green;
+      color: rgba(#fff, 0.82);
       font-weight: normal;
       padding-left: .5em;
     }
   }
 
+  // Subheaders: light teal wash with a teal accent bar — clearly secondary.
   h5 {
-    margin: 0;
-    padding: 0;
-    padding-left: .7em;
-    font-size: 15px;
+    margin: 0 0 .35em 0;
+    padding: .35em .6em;
+    font-size: 14px;
+    font-weight: 600;
     color: $title;
+    background: rgba($mainTitle, 0.12);
+    border-left: 3px solid $mainTitle;
+    border-radius: 0 2px 2px 0;
   }
 
   ul {
@@ -128,7 +133,8 @@ body {
   .masthead {
     grid-area: header;
     text-align: left;
-    padding-bottom: .5em;
+    padding-bottom: 2em;
+    padding-top: 2em;
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-areas:
@@ -149,6 +155,7 @@ body {
     h4 {
       grid-area: subtitle;
       align-self: start;
+      color: $title;
       border: none;
       padding: 0;
       margin: .1em 0 0 0;
@@ -164,10 +171,14 @@ body {
 
   .about {
     grid-area: about;
-    h5 {
-      margin: 0;
-      padding: 0;
-      padding-left: .7em;
+    h4 {
+      padding: .55em .7em;
+      margin: 0 0 .7em 0;
+      font-size: 15px;
+      color: #fff;
+      background: $headerBand;
+      border-radius: 3px;
+      border: none;
     }
   }
 
@@ -186,4 +197,17 @@ body {
     display: inline;
   }
 
+  // Bands waste ink on paper — fall back to bordered/accented text.
+  h3,
+  .about h4 {
+    background: none;
+    color: $title;
+    border-radius: 0;
+    border-top: 2px solid $border;
+    border-bottom: 2px solid $border;
+  }
+
+  h5 {
+    background: none;
+  }
 }
