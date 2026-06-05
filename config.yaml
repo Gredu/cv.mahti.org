@@ -1,10 +1,28 @@
 baseURL: "https://cv.mahti.org"
-languageCode: "fi-fi"
+locale: "fi"
 title: "Greatman Lim - CV"
 
-params:
-  facts:
-    languages:
-        value: "suomi"
-        value: "englanti"
-        value: "teochew"
+# Single-page CV: only the home page is rendered. Disable the page kinds we
+# never link to so they don't emit "no layout" warnings or stray output.
+disableKinds:
+  - taxonomy
+  - term
+  - section
+  - RSS
+  - sitemap
+  - "404"
+
+# The item pages are consumed only by the home template (not linked directly),
+# so build their content but don't write standalone output files.
+cascade:
+  - target:
+      path: "/item/**"
+    build:
+      render: "never"
+      list: "always"
+
+markup:
+  goldmark:
+    renderer:
+      # The CV intentionally authors inline HTML (mailto/links) in content and data.
+      unsafe: true

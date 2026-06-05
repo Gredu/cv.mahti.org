@@ -1,19 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="fi">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Greatman Lim – ohjelmoija ja graafinen suunnittelija. CV: kokemus, taidot ja yhteystiedot." />
+
     {{ $styles := resources.Get "sass/index.scss" | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="all">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand"> 
-    <title>Greatman Lim CV</title>
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+    <title>Greatman Lim - CV</title>
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Greatman Lim - CV" />
+    <meta property="og:description" content="Ohjelmoija ja graafinen suunnittelija. CV: kokemus, taidot ja yhteystiedot." />
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta property="og:image" content="{{ "greatman-lim.jpg" | absURL }}" />
+    <meta property="og:locale" content="fi_FI" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Greatman Lim - CV" />
+    <meta name="twitter:description" content="Ohjelmoija ja graafinen suunnittelija. CV: kokemus, taidot ja yhteystiedot." />
+    <meta name="twitter:image" content="{{ "greatman-lim.jpg" | absURL }}" />
   </head>
 
   <body>
 
     <div class="main-grid">
       <header><h1>CV</h1></header>
-      <div class="picture"><img src="/greatman-lim.jpg" alt=""></div>
+
       <div class="jumbotron">
         <h2>Greatman Lim</h2>
         <h4>ohjelmoija - graafinen suunnittelija</h4>
@@ -21,19 +37,22 @@
           <p>Työkiinnostukseni tällä hetkellä ovat web devaus (fullstack, frontend, backend), tekoäly ja data-analyysi. Käy katsomassa <a href="https://github.com/Gredu">Github</a>.</p>
         </div>
       </div>
+
+      <div class="picture"><img src="/greatman-lim.jpg" alt="Greatman Lim"></div>
+
       <main>
-        {{ range .Site.Taxonomies.categories.item }}
+        {{ range (where .Site.RegularPages "Section" "item").ByParam "startYear" | collections.Reverse }}
         <article>
           <h3>{{ .Params.startYear }} {{ with .Params.endYear }}- {{ . }}{{ end }} {{ .Title }} {{ with .Description }}<span class="description">{{ . }}</span>{{ end }}</h3>
           {{ .Content }}
         </article>
         {{ end }}
       </main>
-      <div class="about">
 
+      <div class="about">
         <h4>Yleistä</h4>
 
-        {{ range .Site.Data.facts.facts }}
+        {{ range (index hugo.Data "facts").facts }}
         <h5>{{ .label }}</h5>
         <ul>
           {{ range .items }}
@@ -59,13 +78,9 @@
           {{ end }}
         </ul>
         {{ end }}
+      </div>
 
-        {{ with .Site.GetPage "/tavoitteet.md" }}
-        <div class="goal">
-          <h4>{{ .Title }}</h4>
-          {{ .Content }}
-        </div>
-        {{ end }}
+    </div>
 
   </body>
 
