@@ -2,6 +2,7 @@
 title: "Pohjalaisten tanssikerho ry"
 date: 2020-01-12T17:31:25+02:00
 categories: ["item"]
+type: "volunteer"
 startYear: 2019
 endYear: 2021
 ---

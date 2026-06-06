@@ -2,6 +2,7 @@
 title: "Comets ry"
 date: 2021-01-20T13:22:00+02:00
 categories: ["item"]
+type: "volunteer"
 startYear: 2020
 endYear: 2021
 description: "rock- ja swingtanssiseura"

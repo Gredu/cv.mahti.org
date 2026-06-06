@@ -35,11 +35,26 @@
       </header>
 
       <main>
-        {{ range (where .Site.RegularPages "Section" "item").ByParam "startYear" | collections.Reverse }}
-        <article>
-          <h3>{{ .Params.startYear }} {{ with .Params.endYear }}- {{ . }}{{ end }} {{ .Title }} {{ with .Description }}<span class="description">{{ . }}</span>{{ end }}</h3>
-          {{ .Content }}
-        </article>
+        {{/* Ordered CV sections. Each item page opts in via its `type` param.
+             Items without a matching type (e.g. the education entry, already
+             shown in the sidebar) are intentionally not rendered here. */}}
+        {{ $groups := slice
+          (dict "type" "work" "label" "Työkokemus")
+          (dict "type" "volunteer" "label" "Järjestö- ja vapaaehtoistyö")
+        }}
+        {{ range $group := $groups }}
+          {{ $items := (where (where site.RegularPages "Section" "item") "Params.type" $group.type).ByParam "startYear" | collections.Reverse }}
+          {{ with $items }}
+          <section class="cv-group">
+            <h4>{{ $group.label }}</h4>
+            {{ range . }}
+            <article>
+              <h3>{{ .Params.startYear }} {{ with .Params.endYear }}- {{ . }}{{ end }} {{ .Title }} {{ with .Description }}<span class="description">{{ . }}</span>{{ end }}</h3>
+              {{ .Content }}
+            </article>
+            {{ end }}
+          </section>
+          {{ end }}
         {{ end }}
       </main>
 

@@ -167,18 +167,40 @@ body {
     article p:last-child {
       margin-bottom: 25px;
     }
+    // Top-level section dividers (Työkokemus, Järjestö- ja vapaaehtoistyö).
+    // Rendered as an underlined mint label so they outrank the banded h3
+    // entry titles instead of competing with them.
+    .cv-group {
+      margin-bottom: 2.8em;
+      > h4 {
+        margin: 0 0 .9em 0;
+        padding: 0 0 .25em 0;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: .08em;
+        color: $mainTitle;
+        border: none;
+        border-bottom: 2px solid $mainTitle;
+      }
+    }
   }
 
   .about {
     grid-area: about;
+    // Match the main-column section headers: underlined mint label.
     h4 {
-      padding: .55em .7em;
-      margin: 0 0 .7em 0;
-      font-size: 15px;
-      color: #fff;
-      background: $headerBand;
-      border-radius: 3px;
+      margin: 0 0 .9em 0;
+      padding: 0 0 .25em 0;
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: $mainTitle;
+      background: none;
       border: none;
+      border-bottom: 2px solid $mainTitle;
+      border-radius: 0;
     }
   }
 
@@ -198,8 +220,7 @@ body {
   }
 
   // Bands waste ink on paper — fall back to bordered/accented text.
-  h3,
-  .about h4 {
+  h3 {
     background: none;
     color: $title;
     border-radius: 0;
