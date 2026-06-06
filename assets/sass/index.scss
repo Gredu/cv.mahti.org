@@ -177,6 +177,34 @@ body {
     article p:last-child {
       margin-bottom: 25px;
     }
+    // Lists inside CV entries. The global `ul` rule is tuned for the sidebar
+    // facts (no bullets, muted blue), so restore readable text and visible
+    // mint markers for entry content here.
+    article ul {
+      list-style: none;
+      color: $text;
+      font-size: 15px;
+      line-height: 1.5em;
+      padding: .1em .7em; // match the surrounding paragraphs
+      margin: 0 0 1em 0;
+      li {
+        position: relative;
+        margin-bottom: .05em;
+        padding-left: 1.2em;
+        // Custom marker: a slightly larger rounded mint square (the native
+        // ::marker can't be sized or rounded).
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: .52em;
+          width: .55em;
+          height: .42em;
+          background: $mainTitle;
+          border-radius: 2px;
+        }
+      }
+    }
     // Top-level section dividers (Työkokemus, Järjestö- ja vapaaehtoistyö).
     // Rendered as an underlined mint label so they outrank the banded h3
     // entry titles instead of competing with them.
