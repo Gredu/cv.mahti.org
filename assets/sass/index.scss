@@ -32,11 +32,18 @@ body {
     background: $background;
     color: $text;
     font-family: 'Quicksand', sans-serif;
+    // Print/PDF should keep the on-screen colours (mint bands, washes, list
+    // markers) instead of dropping backgrounds the way browsers do by default.
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    // Long words wrap instead of pushing the layout (and the print page) wider.
+    overflow-wrap: break-word;
   }
 
   a {
     text-decoration: none;
     color: $blue ;
+    overflow-wrap: anywhere; // break long URLs rather than overflow the column
     &:hover {
       color: $red;
     }
@@ -131,10 +138,11 @@ body {
       grid-column-gap: 1.2em;
     }
     @media only print {
-      grid-template-columns: 530px 245px;
-      grid-template-areas:
-      "header header"
-      "main   about";
+      // Float layout for print — CSS grid can't paginate across pages in
+      // Firefox (it left page 1 blank). The masthead stays a full-width block;
+      // the columns are floated in the print block below. Fills the page width.
+      display: block;
+      max-width: 800px;
     }
     margin: 0 auto;
     grid-row-gap: 4px;
@@ -249,6 +257,23 @@ body {
 }
 
 @media only print {
+  // Top margin only; sides/bottom stay flush so the layout still fills the
+  // paper width. Applies to every printed page.
+  @page {
+    margin: 1cm;
+  }
+
+  // Two columns via floats; these paginate across pages where the grid could
+  // not (Firefox left page 1 blank with the grid layout).
+  main {
+    float: left;
+    width: 64%;
+  }
+  .about {
+    float: right;
+    width: 32%;
+  }
+
   .hide-on-print {
     display: none;
   }
@@ -257,16 +282,12 @@ body {
     display: inline;
   }
 
-  // Bands waste ink on paper — fall back to bordered/accented text.
-  h3 {
-    background: none;
-    color: $title;
-    border-radius: 0;
-    border-top: 2px solid $border;
-    border-bottom: 2px solid $border;
-  }
-
-  h5 {
-    background: none;
+  // Keep a heading attached to the text right after it, but let long entries
+  // flow across page breaks. (Forcing a whole entry to stay together pushes a
+  // tall one like SaaShop onto the next page, leaving a gap / crushing it.)
+  h3,
+  h5,
+  h6 {
+    break-after: avoid;
   }
 }
