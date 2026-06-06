@@ -49,7 +49,7 @@
             <h4>{{ $group.label }}</h4>
             {{ range . }}
             <article>
-              <h3>{{ .Params.startYear }} {{ with .Params.endYear }}- {{ . }}{{ end }} {{ .Title }} {{ with .Description }}<span class="description">{{ . }}</span>{{ end }}</h3>
+              <h3>{{ .Params.startYear }}{{ if .Params.ongoing }} ~{{ else }}{{ with .Params.endYear }} - {{ . }}{{ end }}{{ end }} {{ .Title }} {{ with .Description }}<span class="description">{{ . }}</span>{{ end }}</h3>
               {{ .Content }}
             </article>
             {{ end }}
