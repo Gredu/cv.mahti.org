@@ -6,4 +6,4 @@ categories: ["item"]
 ---
 Helsingin Yliopiston luonnontieteiden kandidaatti. Pääaineena tietojenkäsittelytiede ja sivuaineena matematiikka. Opiskeluaikana suurin kiinnostus web-ohjelmointiin ja tekoälyyn.
 
-Maisterilinjassa suunnitelmana Algoritmi ja koneoppinen-linja.
+Maisterilinjassa suunnitelmana Algoritmit ja koneoppiminen -linja.

@@ -5,6 +5,6 @@ startYear: 2013
 categories: ["item"]
 type: "volunteer"
 ---
-Lyhytelokuva projekti. Taistelu- ja stunttikoreografi, sekä manageri. Treenit ja yhteydenotot stunttien kanssa, sekä päänäyttelijöiden koulutus taistelukohtauksiin.
+Lyhytelokuvaprojekti. Toimin taistelu- ja stunttikoreografina, sekä managerina. Järjestin harjoitukset ja treenit stunttien ja päänäyttelijöiden kanssa.
 
 Suosittelijana ohjaaja **Pekka Paalanen** (yhteystiedot saatavilla pyynnöstä).
