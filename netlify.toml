@@ -9,5 +9,5 @@ command = """\
   """
 
 [build.environment]
-  HUGO_VERSION = "0.162.1"
+  HUGO_VERSION = "0.169.0"
   DART_SASS_VERSION = "1.107.1"
