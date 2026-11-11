@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-A single-page CV for Greatman Lim, built with Hugo (extended, for SCSS). Content is in Finnish. Deployed to Netlify at https://cv.mahti.org. Pinned to Hugo `0.162.1` (see `netlify.toml`).
+A single-page CV for Greatman Lim, built with Hugo + Dart Sass (for SCSS). Content is in Finnish. Deployed to Netlify at https://cv.mahti.org. Pinned to Hugo `0.162.1` and Dart Sass `1.107.1` (see `netlify.toml`, which installs Dart Sass before building).
 
 ## Commands
 
@@ -24,7 +24,7 @@ The whole site is rendered by **one template**, `layouts/index.html`. There are 
 
 2. **Sidebar facts** — `data/facts.json`. A list of labelled groups (Yhteystiedot, Taidot, Kielitaito, etc.), each with `items`. Per item: `fact` (may contain inline HTML, rendered via `markdownify`), optional `description`, `link`, and `printhref` (a URL shown only in print, hidden on screen via the `hide-on-print` class).
 
-Styling is a single SCSS file, `assets/sass/index.scss`, compiled, minified, and fingerprinted by the template via Hugo Pipes. The design has a dedicated **print stylesheet path** (classes like `hide-on-print`, `printhref`) — when editing layout or styles, check both screen and print rendering.
+Styling is a single SCSS file, `assets/sass/index.scss`, compiled with Dart Sass (`css.Sass` with `transpiler: dartsass`; libsass is deprecated), minified, and fingerprinted by the template via Hugo Pipes. Local builds need a `sass` (Dart Sass) binary on PATH. The design has a dedicated **print stylesheet path** (classes like `hide-on-print`, `printhref`) — when editing layout or styles, check both screen and print rendering.
 
 ### Config intent (config.yaml)
 

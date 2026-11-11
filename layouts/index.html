@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Greatman Lim – ohjelmoija ja graafinen suunnittelija. CV: kokemus, taidot ja yhteystiedot." />
 
-    {{ $styles := resources.Get "sass/index.scss" | toCSS | minify | fingerprint }}
+    {{ $styles := resources.Get "sass/index.scss" | css.Sass (dict "transpiler" "dartsass") | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="all">
 
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">

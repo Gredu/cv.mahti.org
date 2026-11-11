@@ -1,3 +1,5 @@
+@use "sass:color";
+
 // Self-hosted Quicksand (variable weight 300–700), replaces Google Fonts.
 @font-face {
   font-family: 'Quicksand';
@@ -26,7 +28,7 @@ $border: #c5c6c7;
 $green: #61892f;
 $blue: #81a2be;
 $red: #cc6666;
-$headerBand: lighten($mainTitle, 7%); // main-header band, slightly lighter teal
+$headerBand: color.adjust($mainTitle, $lightness: 7%); // main-header band, slightly lighter teal
 
 body {
     background: $background;
@@ -129,6 +131,8 @@ body {
     "header"
     "main"
     "about";
+    margin: 0 auto;
+    grid-row-gap: 4px;
     @media only screen and (min-width: 770px) {
       grid-template-columns: 500px 245px;
       grid-template-areas:
@@ -144,8 +148,6 @@ body {
       display: block;
       max-width: 800px;
     }
-    margin: 0 auto;
-    grid-row-gap: 4px;
   }
 
   .masthead {
