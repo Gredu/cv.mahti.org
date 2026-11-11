@@ -8,7 +8,7 @@ ongoing: true
 description: "rock- ja swingtanssiseura"
 ---
 
-[Comets](https://comets.fi) on Suomen suurin paritanssiyhdistys. Vuonna 2026 jäseniä oli noin 1500.
+[Comets](https://comets.fi) on Suomen suurin paritanssiyhdistys. Vuonna 2026 jäseniä oli noin 1600.
 
 ##### 2020 ~ Bugg-lajivastaava
 
