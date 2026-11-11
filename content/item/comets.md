@@ -10,28 +10,28 @@ description: "rock- ja swingtanssiseura"
 
 [Comets](https://comets.fi) on Suomen suurin paritanssiyhdistys. Vuonna 2026 jäseniä oli noin 1500.
 
-##### 2020 ~ Bugg lajivastaava
+##### 2020 ~ Bugg-lajivastaava
 
-Bugg-kurssien järjestäminen ja suunnittelu, ammattivalmentajien palkkaaminen, seuravalmentajien rekrytoiminen ja heidän koulutussuunnitelmansa laatiminen. Seuran suuren koon vuoksi bugg-kulttuurin kehittäminen ja ylläpito Helsingin seudulla on osittain ollut harteillani.
+Suunnittelen ja järjestän bugg-kurssit, palkkaan ammattivalmentajia, rekrytoin seuravalmentajia ja laadin heidän koulutussuunnitelmansa. Seuran suuren koon vuoksi bugg-kulttuurin kehittäminen ja ylläpito Helsingin seudulla on osittain ollut harteillani.
 
-##### 2020 ~ Bugg valmennus
+##### 2020 ~ Bugg-valmentaja
 
-Aloitin buggin valmentamisen lyhytkursseista ja myöhemmin valmensin kokonaisia kausikursseja. Kausikursseja on valmennettu yhteensä neljä kappaletta. Näiden lisäksi monta tiiviskurssia ja tuuraamisia, kun joku seuravalmentaja on ollut sairaana.
+Aloitin buggin valmentamisen lyhytkursseista ja myöhemmin valmensin kokonaisia kausikursseja. Olen valmentanut yhteensä neljä kausikurssia. Valmennan useita tiiviskursseja ja tuuraan seuravalmentajia heidän sairastuessaan.
 
-Kurssipalautteen pohjalta kurssieni arvosanat ovat olleet koko Cometsin parhaan 5 %:n joukossa.
+Kurssipalautteessa kurssini ovat sijoittuneet koko Cometsin parhaan 5 %:n joukkoon.
 
 ##### 2023 ~ Talousvaliokunta
 
-Päävastuu alennusoikeuksien tarkistuksista ja järjestelmän kehittämisessä.
+Vastaan alennusoikeuksien tarkistuksista ja niiden järjestelmän kehittämisestä.
 
-##### 2023 Comets ry hallitus, tapahtumavastaava
+##### 2023 Hallituksen jäsen, tapahtumavastaava
 
 Tärkeimmät järjestämäni tapahtumat:
 
-  - [Triplan](https://malloftripla.fi) liikuntapäivä, jossa Comets oli mukana
+  - Cometsin osuus [Triplan](https://malloftripla.fi) liikuntapäivässä
   - Cometsin muutto Triplaan ja uuden salin avajaisjuhlat
-  - Kouluille suunnattu markkinointitempaus ja ilmaiset juhlat, joissa ilmainen opetus, yhdessä Mad PhD -yliopistokerhon kanssa
-  - Kilpailujohtaja ja järjestäjä Cometsin sisäisissä kisoissa
+  - Kouluille suunnattu markkinointitempaus yhdessä Mad PhD -yliopistokerhon kanssa: ilmaiset juhlat ja tanssiopetus
+  - Cometsin sisäiset kilpailut järjestäjänä ja kilpailujohtajana
 
-Tapahtumavastaavan lisäksi olin myös talousvaliokunnan jäsen. Triplaan muutto Pukinmäestä oli valiokunnan raskain ja tärkein työ.
+Hallituskauden raskain ja tärkein työ oli Cometsin muutto Pukinmäestä Triplaan. Muuttoa valmisteltiin myös talousvaliokunnassa.
 

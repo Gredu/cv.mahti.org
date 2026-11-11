@@ -7,6 +7,11 @@ categories: ["item"]
 type: "work"
 ---
 
-Esiintyjänä viiden ja kahden hengen ryhmissä, välillä soolona. Yhteistyö Taika Trion (nyk. [Taikatulet](http://taikatulet.fi)) kanssa. Esiintymisen lisäksi asiakaskontaktien ja tuotannon hoitaminen.
+Esiinnyin viiden ja kahden hengen ryhmissä, välillä soolona. Tein yhteistyötä Taika Trion kanssa (myöhemmin Taikatulet, ei enää toiminnassa). Esiintymisen lisäksi hoidin asiakaskontakteja ja tuotantoa.
+
+Suurimmat asiakkaat:
+
+  - Nokia
+  - Ravi- ja hevosnäytös Hartwall Areenalla (nyk. Helsinki Halli)
 
 Suosittelijana yksityisyrittäjä, esiintyjä ja akrobaatti **Jani Hurmerinta** (yhteystiedot saatavilla pyynnöstä).

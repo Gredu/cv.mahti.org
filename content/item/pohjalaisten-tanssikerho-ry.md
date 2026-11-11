@@ -9,18 +9,17 @@ endYear: 2023
 
 ##### 2020 - 2023 Varapuheenjohtaja
 
-Varapuheenjohtajan aikana tein [Pohjalaisten tanssikerholle](https://pohjalaiset.fi/tanssikerho) uudet sivut. Teen pientä ylläpitoa edelleen.
+Varapuheenjohtajakaudellani tein [Pohjalaisten tanssikerholle](https://tanssikerho.pohjalaiset.fi) uudet nettisivut Hugolla. Vastaan edelleen sivujen teknillisestä ylläpidosta.
 
-Toisena projektina yksinkertainen CRM:
+Toisena projektina tein Vuella ja Firebasella yksinkertaisen CRM/ERP-järjestelmän:
 
-  - Samanaikainen käyttö maksujen merkinnöissä ja niiden seuranta reaaliajassa
+  - Usean käyttäjän yhtäaikainen maksujen kirjaus ja reaaliaikainen seuranta
   - Tuottojen seuranta kurssitasolla ja graafiset kaaviot
-  - Jäsenten tiedot, niiden listaus ja filtteröinti
+  - Jäsentietojen listaus ja suodatus
+  - Sähköpostiviestinnän kohdentaminen kursseittain
 
-Nettisivut tehtiin Hugolla, CRM Vuella ja Firebasella.
-
-Viimeisenä vuotena toiminta oli enemmän konsulttimaista. Uudet jäsenet koulutettiin ja perehdytettiin. Vielä 2024 konsultointia jatkettiin, mutta en ollut enää virallisesti osana hallitusta. 
+Viimeisenä vuonna roolini oli enemmän konsulttimainen. Koulutin ja perehdytin uudet hallituksen jäsenet. Jatkoin konsultointia vielä 2024, vaikka en ollut enää virallisesti hallituksessa.
 
 ##### 2019 Puheenjohtaja
 
-Suhteiden ylläpito [Pohjalaisten Valtuuskuntaan](https://pohjalaiset.fi), sekä talouden korjaaminen positiiviseksi. Pohjalaisten tanssikerho on ollut tappiollinen monena vuotena peräkkäin ja lähellä konkurssia, mutta onnistui vuonna 2019 tekemään ennätysvoitot. Myös tulevat vuodet ovat olleet positiivisia, kun markkinointikampanjoista tehtiin rutiinia.
+Ylläpidin suhteita [Pohjalaisten Valtuuskuntaan](https://pohjalaiset.fi) ja käänsin talouden voitolliseksi. Pohjalaisten tanssikerho oli ollut tappiollinen monena vuonna peräkkäin ja lähellä konkurssia, mutta vuonna 2019 kerho teki ennätysvoiton. Myös seuraavat vuodet olivat voitollisia, kun vakiinnutin markkinointikampanjat osaksi rutiinia.

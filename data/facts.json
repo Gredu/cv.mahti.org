@@ -27,14 +27,30 @@
       ]
     },
     {
-      "label": "Taidot ja osaaminen",
+      "label": "Tekninen osaaminen",
       "items": [
         {
           "fact": "Nuxt",
           "description": "+ ekosysteemi"
         },
         {
+          "fact": "JavaScript",
+          "description": ""
+        },
+        {
+          "fact": "Firebase",
+          "description": ""
+        },
+        {
+          "fact": "BigQuery & Looker Studio",
+          "description": ""
+        },
+        {
           "fact": "Hugo",
+          "description": ""
+        },
+        {
+          "fact": "UI/UX-suunnittelu",
           "description": ""
         },
         {
@@ -42,6 +58,35 @@
           "description": "henkilökohtaisia projekteja",
           "link": "https://github.com/Gredu",
           "printhref": "github.com/Gredu"
+        }
+      ]
+    },
+    {
+      "label": "Johtaminen",
+      "items": [
+        {
+          "fact": "Esihenkilötyö",
+          "description": "3–5 hengen kehitystiimi"
+        },
+        {
+          "fact": "Tuoteomistajuus",
+          "description": "määrittely ja priorisointi"
+        },
+        {
+          "fact": "Rekrytointi",
+          "description": "myös palkkaneuvottelut"
+        },
+        {
+          "fact": "Sidosryhmäyhteistyö",
+          "description": "johto, asiakkaat, kumppanit"
+        },
+        {
+          "fact": "Talouden tervehdyttäminen",
+          "description": "yhdistystoiminta"
+        },
+        {
+          "fact": "Valmennus ja koulutus",
+          "description": ""
         }
       ]
     },
