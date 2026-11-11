@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-A single-page CV for Greatman Lim, built with Hugo + Dart Sass (for SCSS). Content is in Finnish. Deployed to Netlify at https://cv.mahti.org. Pinned to Hugo `0.162.1` and Dart Sass `1.107.1` (see `netlify.toml`, which installs Dart Sass before building).
+A single-page CV for Greatman Lim, built with Hugo + Dart Sass (for SCSS). Content is in Finnish. Deployed to Netlify at https://cv.mahti.org. Pinned to Hugo `0.169.0` and Dart Sass `1.107.1` (see `netlify.toml`, which installs Dart Sass before building).
 
 ## Commands
 
