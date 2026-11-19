@@ -7,7 +7,11 @@ startYear: 2019
 endYear: 2023
 ---
 
+Nykyään Pohjalaisten tanssikerhon talous on hyvässä kunnossa ja jäsenmäärä on huipussaan.
+
 ##### 2020 - 2023 Varapuheenjohtaja
+
+Varapuheenjohtajakauteni alkoi koronapandemian aikaan, ja pandemia oli kerholle toinen taloudellinen kriisi. Toiminnan pitäminen käynnissä oli vaikeaa, mutta kerho selvisi pandemian yli.
 
 Varapuheenjohtajakaudellani tein [Pohjalaisten tanssikerholle](https://tanssikerho.pohjalaiset.fi) uudet nettisivut Hugolla. Vastaan edelleen sivujen teknillisestä ylläpidosta.
 
